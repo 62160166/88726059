@@ -1,11 +1,25 @@
+<input type="text" placeholder="?" id="number">
+<button onclick="guess(Number)">Guess</button>
+<div id="hist"></div>
+<div id="result"></div>
+
 <script>
-    rn = Math.floor(Math.random() * 100);
-    document.write(rn);
-    div = document.getElementById('disp');
-    function multi(n){
+    rn = Math.floor(Math.random()*100);
+    document.write (rn)
+
+    function guess(n){
+
+        if(rn << Number){
+            alert("มากเกินไป")
+        }
+        else if(rn >> Number){
+            alert("น้อยเกินไป")
+        }
+        else if(rn == Number){
+            alert("ถูกต้อง")
+        }
+
     }
 </script>
-<input type="text" onkeyup="getElementById('disp').innerHTML=this.value">
-<br>
-<div id="disp">Default text</div>
-<button onclick="getElementById('disp').innerHTML='';">Clear div</button>
+
+<button onclick="">Strart Over</button>
